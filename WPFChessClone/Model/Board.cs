@@ -96,10 +96,6 @@ namespace WPFChessClone.Model
                 fields[x, y] = new Field(cTemp, pTemp);
             }
 
-            //!! remove !!//
-            fields[7, 4] = new Field(new Coordinates(7, 4), new Bishop(ChessColor.Black));
-            fields[3, 2] = new Field(new Coordinates(3, 2), new Knight(ChessColor.White));
-            //!! remove !!//
 
             fields[0, 7] = new Field(new Coordinates(0, 7), new Rook(color));
             fields[1, 7] = new Field(new Coordinates(1, 7), new Knight(color));
