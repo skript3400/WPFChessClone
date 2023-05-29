@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="WPFChessClone.Display.PromotionDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFChessClone.Display"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="400"
+             Background="Gray"
+             Width="400"
+             Height="400">
+    <Grid x:Name="OptionsGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Width="50" Height="50" MouseDown="p0_Clicked_Handler">
+            <Path x:Name="p0" Width="50" Height="50"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Width="50" Height="50" MouseDown="p1_Clicked_Handler">
+            <Path x:Name="p1" Width="50" Height="50"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Width="50" Height="50" MouseDown="p2_Clicked_Handler">
+            <Path x:Name="p2" Width="50" Height="50"/>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Width="50" Height="50" MouseDown="p3_Clicked_Handler">
+            <Path x:Name="p3" Width="50" Height="50"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
